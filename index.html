@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image neural network with javascript</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/Network.js"></script>
+    <script type="text/javascript" src="js/Neural.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="middle">
+        <button id="clearCanvas">Clear</button>
+        <span id="prediction"></span>
+    </div>
+    <canvas id="preview" width="400px" height="250px"></canvas>
+    <div id="settings">
+        <button id="saveTraining">Save training data</button>
+        <form name="settingsForm" id="settingsForm">
+            <select id="trainingNumber" name="result">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            </select>
+            <label for="trainingNumber">This is the number I've drawn (swear on me mum)</label><br>
+            <label for="runTraining">Run simulations</label>
+            <input type="checkbox" name="runTraining" id="runTraining" value="1"><br>
+            <label for="displayStatistics">Display statistics</label>
+            <input type="checkbox" name="displayStatistics" id="displayStatistics" value="1">
+            <div id="statistics"></div>
+        </form>
+    </div>
+</body>
+</html>
